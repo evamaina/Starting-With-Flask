@@ -1,0 +1,16 @@
+{% macro displayMovieList(movie_list) %}
+
+    {% for movie in movie_list %}
+        <li>{{ movie.title}}</li>
+    {% endfor %}
+
+{% endmacro %}
+
+<!--
+Macros are the Jinja equivalent to python functions.
+ It allows us to group blocks of our code's logic that
+  will be reused multiple times.We define our first macro
+   displayMovieList() that takes one argument which is a
+    list of movie objects. We then loop through the movie
+     objects creating <li> tags to display movie titles.
+-->
