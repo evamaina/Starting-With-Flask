@@ -2,7 +2,11 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
+    MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3/movie/550?api_key=ed92bde7262096770c0c40c9443d203e'
+    '''
+    We use the {} to represent sections in the URL that will be
+     replaced with actual values
+    '''
 
 
 class ProdConfig(Config):
@@ -27,7 +31,6 @@ class DevConfig(Config):
 
     DEBUG = True
 
-
     '''
     Here we created three classes. The parent Config
     class contains configurations that are used in
@@ -38,7 +41,6 @@ class DevConfig(Config):
     subclass containsconfigurations that are used in
     development stages of our application and inherits
      from the parent Config class.
-
     Inside DevConfig subclass we add DEBUG = True
     this enables debug mode in our application.
     '''
