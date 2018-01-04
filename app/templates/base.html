@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best Movie Review website </title>
-        {% endif %}
-    </head>
-    <body>
-        <!-- Content block -->
+{% extends 'bootstrap/base.html'%}
 
-        {% block content %}
+<!-- Navbar block  --> 
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
 
-        {% endblock%}
-    </body>
-</html>
+<!--We use the bootstrap/base.html navbar block
+ and we use the includes control block to include
+  our _navbar.html_ file to that section of the
+   base.html template-->
