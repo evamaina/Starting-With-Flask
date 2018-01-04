@@ -44,3 +44,4 @@ class DevConfig(Config):
     Inside DevConfig subclass we add DEBUG = True
     this enables debug mode in our application.
     '''
+    
